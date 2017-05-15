@@ -63,10 +63,10 @@ class ReactPongApp extends Component {
 			clientHeight: this.clientHeight,
 			clientWidth: this.clientWidth,
 			movementHandler: (handler) => {
-				window.addEventListener('keypress', (value, e) => {
+				window.addEventListener('keydown', (value, e) => {
 			        switch(value.keyCode) {
 			            case 87:
-			                handler('up')
+			                handler('up');
 			                break;
 
 			            case 83:
@@ -82,13 +82,13 @@ class ReactPongApp extends Component {
 			clientHeight: this.clientHeight,
 			clientWidth: this.clientWidth,
 			movementHandler: (handler) => {
-				window.addEventListener('keypress', (value, e) => {
+				window.addEventListener('keydown', (value, e) => {
 			        switch(value.keyCode) {
-			            case 119:
-			                handler('up')
+			            case 38:
+			                handler('up');
 			                break;
 
-			            case 115:
+			            case 40:
 			                handler('down');
 			                break;
 			        }
