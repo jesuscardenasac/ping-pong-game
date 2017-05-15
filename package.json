@@ -2,12 +2,12 @@
   "name": "react-intro-workshop",
   "private": "true",
   "version": "1.0.0",
-  "description": "Workspace for the Intro to React.js workshop",
+  "description": "reactjs app",
   "scripts": {
     "start": "$(npm root)/.bin/webpack-dev-server --progress --inline --hot",
     "shrinkwrap": "npm shrinkwrap --dev"
   },
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Jesus Cardenas",
   "license": "CC0-1.0",
   "devDependencies": {
     "babel-core": "6.4.5",
