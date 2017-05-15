@@ -12,7 +12,7 @@ class MisJuegos extends Component {
         
         var self = this;
         
-        axios.get('http://phptest-jesuscardenas.c9users.io/juego/4')
+        axios.get('http://ping-pong-game-backend-jesuscardenas.c9users.io/juego/4')
           .then(function (response) {
               self.setState({juegos: response.data});
             console.log(self.state.juegos);

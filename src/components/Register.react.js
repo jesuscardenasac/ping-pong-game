@@ -15,8 +15,13 @@ class Register extends Component {
       var email = this.state.email;
       
       
-        axios.post('http://phptest-jesuscardenas.c9users.io/user?name='+name+'&email='+email+'&password='+password)
+        axios.post('http://ping-pong-game-backend-jesuscardenas.c9users.io/user?name='+name+'&email='+email+'&password='+password)
         .then(function (response) {
+          if(response.statusText == "OK") {
+            alert("usuario creado correctamente");
+          } else {
+            alert("error intente mas tarde");
+          }
           console.log(response);
         })
         .catch(function (error) {

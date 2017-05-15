@@ -14,7 +14,7 @@ class CuadroHonor extends Component {
         
         var self = this;
         
-        axios.get('http://phptest-jesuscardenas.c9users.io/juego')
+        axios.get('http://ping-pong-game-backend-jesuscardenas.c9users.io/juego')
           .then(function (response) {
               self.setState({honor: response.data});
             console.log(self.state.honor);
